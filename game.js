@@ -33,8 +33,9 @@ We set the inital message to let the players know whose turn it is
 */
 statusDisplay.innerHTML = currentPlayerTurn();
 
-function handleCellPlayed() {
-
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+  gameState[clickedCellIndex] = currentPlayer;
+  clickedCell.innerHTML = currentPlayer;
 }
 function handlePlayerChange() {
 
