@@ -1,6 +1,11 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Orbitron', sans-serif;
+
+  background-color: #dadcdd;
+  background-image: url("https://github.com/rndedg/TicTacToe/blob/master/brick-wall-dark.png?raw=true");
 }
+
+
 
 section {
   text-align: center;
@@ -17,8 +22,17 @@ section {
   font-family: "Permanent Marker", cursive;
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 0 1px #333333;
+  box-shadow: 0 0 0 2px #333333;
   cursor: pointer;
   line-height: 170px;
   font-size: 200px;
+}
+
+.cell:hover {
+  box-shadow: 0 0 0 4px #bb1919;
+}
+
+button {
+  background-color: lightskyblue;
+  border-radius: 8px;
 }
