@@ -97,12 +97,18 @@ function handleCellClick(clickedCellEvent) {
     return;
   }
 
-  console.log(`You have clicked cell number ${clickedCellIndex}`);
   handleCellPlayed(clickedCell, clickedCellIndex);
   handleResultValidation();
 }
 
-function handleRestartGame() {}
+function handleRestartGame() {
+  gameActive = true;
+  currentPlayer = "X";
+  gameState = ["", "", "", "", "", "", "", "", ""];
+  statusDisplay.innerHTML = currentPlayer;
+  document.querySelectorAll('.cell')
+          .forEach(cell => cell.innerHTML = "");
+}
 /*
 And finally we add our event listeners to the actual game cells, as well as our 
 restart button
